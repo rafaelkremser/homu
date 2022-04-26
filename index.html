@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="homu.png">
+</head>
+<body>
+    <section class="banner">
+        <nav class="header">
+            <a href=""><img src="logo.png"></a>
+            <div class="links" id="links">
+                <ion-icon name="close" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="">INÍCIO</a></li>
+                    <li><a href="https://github.com/rafaelkremser">SOBRE NÓS</a></li>
+                    <li><a href="./cardápio">CARDÁPIO</a></li>
+                    <li><a href="./contatos">CONTATOS</a></li>
+                </ul>
+            </div>
+            <ion-icon name="menu" onclick="showMenu()"></ion-icon>
+        </nav>
+        <div class="textbox">
+            <h1>HOMU</h1>
+            <p>O melhor restaurante japonês de Belo Horizonte</p>
+            <div class="button-div">
+                <a class="button" href="./cardápio/">Conheça o nosso cardápio
+                    <span class="arrow"></span>
+                    
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="describe">
+        <div class="ilustration2"></div>
+        <div class="describe-div">
+            <div class="ilustration"></div>
+            <div class="label">
+                <div class="title">Conheça-nos</div>
+                <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>Sobre nós</h2>
+                <p>Somos uma empresa fundada em 2021 pelo aluno Rafael Freitas Kremser em Belo Horizonte, Brasil. Nosso objetivo é facilitar a vida dos nossos clientes oferecendo-nos nossas ferramentas de qualidade e nossos profissionais para atender seus pedidos.</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/neymarjr"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="https://twitter.com/cecmitadas"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://instagram.com/faelkremser"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCx-FM1XLcIxfwqRsQkRVDVg"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                </ul>
+            </div>
+            <div class="sec documents">
+                <h2>Informações</h2>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Temos & Condições</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="sec contactus">
+                <h2>Contatos</h2>
+                <ul class="contacts">
+                    <li>
+                        <span><ion-icon name="business"></ion-icon></span>
+                        <span>Rua Santa Cruz, 546 - Bairro Barroca Belo Horizonte - CEP: 30431-228</span>
+                    </li>
+                    <li>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <p><a href="tel:33622031">3362-2031</a></p>
+                    </li>
+                    <li>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <p><a href="mailto:rafaelfreitaskremser@gmail.com">rafaelfreitaskremser@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright © 2021 Rafael Kremser - Todos os direitos reservados.</p>
+    </div>
+
+
+    <script>
+
+        var links = document.getElementById("links");
+
+        function showMenu(){
+            links.style.right = "0";
+        }
+        function hideMenu(){
+            links.style.right = "-200px";
+        }
+
+    </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

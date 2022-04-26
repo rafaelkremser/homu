@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200;300;400;600;700&family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    background: #000;
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
+.section {
+    min-height: 100vh;
+    width: 100%;
+}
+.banner {
+    /*animation: gradient 10s ease infinite;*/
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    background: url('background.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /*background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);background-size: 300% 300%;*/
+}
+.header {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img {
+    height: 60px;
+    width: 60px;
+}
+.links {
+    flex: 1;
+    text-align: right;
+}
+.links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff1100;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.links ul li:hover::after {
+    width: 70%;
+}
+.textbox {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.textbox h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+}
+.textbox p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+.textbox .button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    transition: 0.4s;
+}
+.button::after {
+    content: '';
+    background: #fff;
+    width: 51px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transition: 0.4s;
+}
+.button:hover::after {
+    background: #ff1100;
+    width: 140px;
+    animation-name: complement-arrow;
+    animation-duration: 0.4s;
+}
+@keyframes complement-arrow {
+    0% {
+        right: -25px;
+    }
+    50% {
+        right: -33px;
+    }
+    100% {
+        right: -25px;
+    }
+}
+.textbox .button:hover {
+    border: 1px solid #ff1100;
+    color: #ff1100;
+}
+.button .arrow {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #fff;
+    right: -26px;
+    top: 18px;
+    transform: rotate(-45deg);
+    transition: 0.4s;
+    border-left: none;
+    border-top: none;
+    transition: 0.4s;
+}
+.button:hover .arrow {
+    border: 1px solid #ff1100;
+    border-left: none;
+    border-top: none;
+    animation-name: arrow;
+    animation-duration: 0.4s;
+}
+@keyframes arrow {
+    0% {
+        right: -26px;
+    }
+    50% {
+        right: -34px;
+    }
+    100% {
+        right: -26px;
+    }
+}
+.header ion-icon {
+    display: none;
+}
+.describe {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.label {
+    position: absolute;
+    width: 600px;
+    right: 0;
+    margin-right: 30%;
+    margin-top: 200px;
+}
+.describe .title {
+    color: #BF0000;
+    font-size: 40px;
+    margin-left: 60px;
+}
+.describe .text {
+    color: #fff;
+    padding: 20px;
+    background: #BF0000;
+}
+.describe .ilustration {
+    background: url('ilustration.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 562px;
+    width: 375px;
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+}
+.describe-div {
+    margin: 60px;
+}
+.ilustration2 {
+    position: absolute;
+    height: 682px;
+    width: 568px;
+    left: -50px;
+    background: url("ilustration 2.png"), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .sec {
+    margin-right: 30px;
+}
+footer .container .sec.aboutus {
+    width: 40%;
+}
+footer .container h2 {
+    position: relative;
+    color: #BF0000;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #BF0000; /*#008036*/
+}
+footer p {
+    color: #BF0000;
+}
+.socials {
+    margin-top: 20px;
+    display: flex;
+}
+.socials li {
+    list-style: none;
+}
+.socials li a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #BF0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    color: #000;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+.socials li a:hover {
+    background: #880000; /*rgb(209, 209, 209)*/
+}
+.documents {
+    position: relative;
+    width: 25%;
+}
+.documents ul li {
+    list-style: none;
+}
+.documents ul li a {
+    color: #BF0000;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.documents ul li a:hover {
+    color: rgb(209, 209, 209)
+}
+.contactus {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contactus .contacts {
+    position: relative;
+}
+.contactus .contacts li {
+    display: flex;
+    margin-bottom: 16px;
+}
+.contactus .contacts li span:nth-child(1) {
+    color: #BF0000;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contactus .contacts li span {
+    color: #BF0000;
+}
+.contactus .contacts li a {
+    color: #BF0000;
+    text-decoration: none;
+}
+.copyright {
+    width: 100%;
+    background: #BF0000;
+    padding: 8px 100px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+@media(max-width: 700px){
+    .textbox h1 {
+        font-size: 60px;
+    }
+    .links ul li {
+        display: block;
+    }
+    .links {
+        position: absolute;
+        background: #BF0000;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .header ion-icon {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        font-size: xx-large;
+    }
+    .links ul {
+        padding: 30px;
+    }
+}
